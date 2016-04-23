@@ -29,6 +29,7 @@ for country in root.findall('country'):
 im_df = pd.DataFrame({'Country':countries,'Infant Mortality':im})
 im_df.sort_values('Infant Mortality').head(10)
 ```
+#These are the 10 countries with the lowest Infant Mortality.
 
 
 
