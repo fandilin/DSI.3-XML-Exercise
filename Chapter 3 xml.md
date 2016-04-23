@@ -117,6 +117,7 @@ for city in root.findall('country//city'):
 citypops_df = pd.DataFrame({'City':cities,'Population':citypops})
 citypops_df.sort_values('Population').tail(10)
 ```
+###These are the 10 cities with the highest population.
 
 
 
@@ -202,6 +203,7 @@ for country in root.findall('country'):
 groups_df = pd.DataFrame({'Ethnic Group':groups,'Population':grouppops})
 groups_df.groupby('Ethnic Group').sum().sort_values('Population').tail(10)
 ```
+###These are the 10 ethnic groups with the highest population.
 
 
 
@@ -282,6 +284,7 @@ for river in root.findall('river'):
 rivers_df = pd.DataFrame({'River':rivers,'Length':lengths})
 rivers_df.sort_values('Length').tail()
 ```
+These are the 10 longest rivers.
 
 
 
@@ -344,6 +347,7 @@ for lake in root.findall('lake'):
 lakes_df = pd.DataFrame({'Lake':lakes,'Area':areas})
 lakes_df.sort_values('Area').tail()
 ```
+These are the 10 largest lakes.
 
 
 
@@ -406,6 +410,7 @@ for airport in root.findall('airport'):
 airports_df = pd.DataFrame({'Airport':airports,'Elevation':elevations})
 airports_df.sort_values('Elevation').tail()
 ```
+These are the airports with the highest elevation.
 
 
 
